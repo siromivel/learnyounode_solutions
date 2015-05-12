@@ -1,10 +1,13 @@
 'use strict';
 
+//Toys...
 var http = require('http');
 var url = require('url');
 
 var port = process.argv[2];
 
+
+//Let's build a few functions to help us handle this ugly data...
 function getUnixTime(date) {
 	return date.getTime();
 }
@@ -17,6 +20,7 @@ function parseTime(date) {
 	}
 }
 
+//Let's have a chat
 var server = http.createServer(function (req, res) {
 	var parsedUrl = url.parse(req.url, true);
 	var path = parsedUrl.pathname;

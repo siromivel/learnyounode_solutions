@@ -1,5 +1,7 @@
+//It depends on...
 var net = require('net');
 
+//Do you happen to have the time?
 var server = net.createServer(function (socket) {
 	var date = new Date();
 	var year = date.getUTCFullYear().toString();

@@ -2,7 +2,7 @@
 var http = require('http');
 var fs = require('fs');
 
-//Because who the fuck knows what process.argv[2] even is?
+//Because who knows what process.argv[someNumber] even is?
 var port = process.argv[2];
 var file = process.argv[3];
 
